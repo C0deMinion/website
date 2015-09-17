@@ -9,14 +9,7 @@
 	<context:component-scan base-package="com.codeMinion.sample" />
 	<context:component-scan base-package="com.codeMinion.service" />
 
+	<mvc:resources mapping="/jsp/**" location="/WEB-INF/jsp/" />
 	<mvc:annotation-driven />
-
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<property name="viewClass"
-			value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
 
 </beans>
